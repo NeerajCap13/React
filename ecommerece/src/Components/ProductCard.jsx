@@ -10,7 +10,7 @@ export default function ProductCard({data}) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 140}}
         image={data.image}
         title="green iguana"
       />
@@ -19,8 +19,7 @@ export default function ProductCard({data}) {
           {data.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {data.description}
         </Typography>
       </CardContent>
       <CardActions>
