@@ -8,9 +8,10 @@ import Typography from '@mui/material/Typography';
 
 export default function ProductCard({data}) {
   return (
-    <Card   sx={{ maxWidth:345,height: 500 ,display:"flex",flexDirection:"column", justifyContent:"space-between",alignItems:"center"}}>
+    <Card   sx={{ maxWidth:545,height: 400 ,display:"flex",flexDirection:"column", justifyContent:"space-between",alignItems:"center"}}>
       <CardMedia
-        sx={{ height: 300, width:250, objectFit:"contain" }}
+        component={'img'}
+        sx={{ height: 100, width:150 , mt:3, objectFit:"contain"}}
         image={data.image}
         title="green iguana"
       />

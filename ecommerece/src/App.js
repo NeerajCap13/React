@@ -21,7 +21,7 @@ function App() {
     <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
                 {data.map((data) => (
-                    <Grid item key={data.id} xs={12} sm={6} md={4} lg={3} xl={4}>
+                    <Grid item key={data.id} xs={12} sm={6} md={6} lg={3} xl={6}>
                         <ProductCard data={data} />
                     </Grid>
                 ))}
