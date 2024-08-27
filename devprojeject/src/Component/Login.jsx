@@ -1,62 +1,65 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-import { Box, TextField } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 
 const Login = () => {
   return (
-    <Container
-      maxWidth="lg"
+    <Box
       sx={{
-        width: 400,
-        height: 400,
+        background: "linear-gradient(135deg, #000000, #434343)",
+        minHeight: "100vh",
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
       }}
     >
       <Box
-        className="Box" 
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          
+          maxWidth: "1290px",
+          minHeight: "200px",
+          backgroundColor: "white",
+          margin: "auto 0",
+          py: "8px",
+          px: "16px",
+          paddingBottom:"20px"
         }}
       >
-        <h2 style={{color:"#252EFF"}}>Login</h2>
-        <TextField sx={{
-            width:352,
-            height:40,
-            borderRadius:20,
-            border: 2,
-            borderColor:"#252EFF",
-            
-        }}/>
+        <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
+          Login
+        </Typography>
 
-        <TextField sx={{
-            width:352,
-            height:40,
-            borderRadius:20,
-            border: 2,
-            borderColor:"#252EFF",
-                        
-        }}/>
-       
-        <Button
-          variant="contained"
+        <TextField
+          fullWidth
+          label="Username"
+          type="username"
+          variant="outlined"
           sx={{
-            borderRadius: 20,
-            width: 153,
-            height: 38,
-            backgroundColor:"#252EFF",
+            marginBottom: "10px",
+           
           }}
-        >
+        />
+
+        <TextField
+          fullWidth
+          label="Password"
+          type="password"
+          variant="outlined"
+          sx={{
+            marginBottom: "10px",
+          }}
+        />
+        <Button 
+        fullWidth   
+        sx={{
+          backgroundColor:"#ffd700",
+          color:"white",
+          height:"50px"
+        }}>
           LOGIN
         </Button>
       </Box>
-    </Container>
+    </Box>
   );
 };
 
