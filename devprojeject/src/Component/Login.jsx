@@ -22,7 +22,8 @@ const Login = () => {
           margin: "auto 0",
           py: "8px",
           px: "16px",
-          paddingBottom:"20px"
+          paddingBottom:"20px",
+          borderRadius:"5px"
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
@@ -36,7 +37,7 @@ const Login = () => {
           variant="outlined"
           sx={{
             marginBottom: "10px",
-           
+            borderRadius:"5px"
           }}
         />
 
@@ -47,6 +48,7 @@ const Login = () => {
           variant="outlined"
           sx={{
             marginBottom: "10px",
+            borderRadius:"5px"
           }}
         />
         <Button 
@@ -54,7 +56,10 @@ const Login = () => {
         sx={{
           backgroundColor:"#ffd700",
           color:"white",
-          height:"50px"
+          height:"50px",
+          borderRadius:"5px",
+          marginTop : "5px",
+          "&:hover":{ bgcolor : "#ffea00"}
         }}>
           LOGIN
         </Button>
