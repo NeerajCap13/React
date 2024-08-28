@@ -18,12 +18,12 @@ const Login = () => {
         sx={{
           maxWidth: "1290px",
           minHeight: "200px",
-          backgroundColor: "white",
+          backgroundColor: "#faf8ff",
           margin: "auto 0",
-          py: "8px",
-          px: "16px",
-          paddingBottom:"20px",
-          borderRadius:"5px"
+          py: "10px",
+          px: "10px",
+          paddingBottom: "20px",
+          borderRadius: "5px",
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
@@ -37,7 +37,7 @@ const Login = () => {
           variant="outlined"
           sx={{
             marginBottom: "10px",
-            borderRadius:"5px"
+            borderRadius: "5px",
           }}
         />
 
@@ -48,19 +48,20 @@ const Login = () => {
           variant="outlined"
           sx={{
             marginBottom: "10px",
-            borderRadius:"5px"
+            borderRadius: "5px",
           }}
         />
-        <Button 
-        fullWidth   
-        sx={{
-          backgroundColor:"#ffd700",
-          color:"white",
-          height:"50px",
-          borderRadius:"5px",
-          marginTop : "5px",
-          "&:hover":{ bgcolor : "#ffea00"}
-        }}>
+        <Button
+          fullWidth
+          sx={{
+            backgroundColor: "#ffd700",
+            color: "Black",
+            height: "50px",
+            borderRadius: "5px",
+            marginTop: "5px",
+            "&:hover": { bgcolor: "#ffea00" },
+          }}
+        >
           LOGIN
         </Button>
       </Box>
