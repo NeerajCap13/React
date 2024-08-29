@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box,TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
     <Box
       sx={{
-        background: "linear-gradient(135deg, #000000, #434343)",
+        background: "#faebd7",
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
@@ -18,30 +18,30 @@ const Login = () => {
       <Box
         sx={{
           maxWidth: "390px",
+          width: { xs: "300px", sm: "380px", md: "390px" },
           minHeight: "200px",
-          backgroundColor: "#faf8ff",
+          backgroundColor: "#e3d4c1",
           margin: "auto 0",
           py: "10px",
           px: "10px",
           paddingBottom: "20px",
           borderRadius: "5px",
+          textAlign:"center"
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
           Login
         </Typography>
-
         <TextField
           fullWidth
           label="Username"
           type="username"
-          variant="outlined"
+          
           sx={{
             marginBottom: "10px",
             borderRadius: "5px",
           }}
         />
-
         <TextField
           fullWidth
           label="Password"
@@ -55,23 +55,28 @@ const Login = () => {
         <Button
           fullWidth
           sx={{
-            backgroundColor: "#ffd700",
+            backgroundColor: "#228b22",
             color: "Black",
             height: "50px",
             borderRadius: "5px",
             marginTop: "5px",
-            marginBottom:"5px",
-            "&:hover": { bgcolor: "#ffea00" },
+            marginBottom: "5px",
+            width:"175px",
+            "&:hover": { bgcolor: "#228b22" },
           }}
-        >
-          LOGIN
+        >LOGIN
         </Button>
-        <Typography variant="p">Create an Account</Typography>{" "}
+        <br />
+        <Typography variant="h8" color={"purple"}>
+          Forgot Password?
+        </Typography>
+        <br />
+        <Typography variant="p">Don't Have Account?</Typography>{" "}
         <Typography
           variant="p"
           component={Link}
           to="/register"
-          sx={{ color: "#ffea00", textDecoration: "none" }}
+          sx={{ color: "#228b22", textDecoration: "none" }}
         >
           SignUp
         </Typography>
