@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { Box, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -16,7 +17,7 @@ const Login = () => {
     >
       <Box
         sx={{
-          maxWidth: "1290px",
+          maxWidth: "390px",
           minHeight: "200px",
           backgroundColor: "#faf8ff",
           margin: "auto 0",
@@ -59,11 +60,21 @@ const Login = () => {
             height: "50px",
             borderRadius: "5px",
             marginTop: "5px",
+            marginBottom:"5px",
             "&:hover": { bgcolor: "#ffea00" },
           }}
         >
           LOGIN
         </Button>
+        <Typography variant="p">Create an Account</Typography>{" "}
+        <Typography
+          variant="p"
+          component={Link}
+          to="/register"
+          sx={{ color: "#ffea00", textDecoration: "none" }}
+        >
+          SignUp
+        </Typography>
       </Box>
     </Box>
   );
