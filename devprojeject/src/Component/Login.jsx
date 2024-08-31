@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import { Box,TextField, Typography } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -26,7 +26,7 @@ const Login = () => {
           px: "10px",
           paddingBottom: "20px",
           borderRadius: "5px",
-          textAlign:"center"
+          textAlign: "center",
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
@@ -36,7 +36,6 @@ const Login = () => {
           fullWidth
           label="Username"
           type="username"
-          
           sx={{
             marginBottom: "10px",
             borderRadius: "5px",
@@ -56,15 +55,16 @@ const Login = () => {
           fullWidth
           sx={{
             backgroundColor: "#228b22",
-            color: "Black",
+            color: "white",
             height: "50px",
             borderRadius: "5px",
             marginTop: "5px",
             marginBottom: "5px",
-            width:"175px",
+            width: "175px",
             "&:hover": { bgcolor: "#228b22" },
           }}
-        >LOGIN
+        >
+          LOGIN
         </Button>
         <br />
         <Typography variant="h8" color={"purple"}>

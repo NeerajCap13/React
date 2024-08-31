@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <Box
       sx={{
-        background: "linear-gradient(135deg, #000000, #434343)",
+        background: "#faebd7",
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
@@ -16,14 +16,16 @@ const Register = () => {
     >
       <Box
         sx={{
-          maxWidth: "590px",
+          maxWidth: "490px",
+          width: { xs: "300px", sm: "380px", md: "390px" },
           minHeight: "210px",
-          backgroundColor: "#aca7cb",
+          backgroundColor: "#e3d4c1",
           margin: "auto 0",
           py: "8px",
           px: "16px",
           paddingBottom: "20px",
           borderRadius: "5px",
+          textAlign:"center"
         }}
       >
         <Typography variant="h4" sx={{ mb: 2, color: "Black" }}>
@@ -82,23 +84,25 @@ const Register = () => {
         <Button
           fullWidth
           sx={{
-            backgroundColor: "#ffd700",
+            backgroundColor: "#228b22",
             color: "white",
+            width:"175px",
             height: "50px",
             borderRadius: "5px",
             marginTop: "5px",
             marginBottom: "10px",
-            "&:hover": { bgcolor: "#ffea00" },
+            "&:hover": { bgcolor: "#228b22" },
           }}
         >
           REGISTER
         </Button>
+        <br />
         <Typography variant="p">Already have an Account?</Typography>{" "}
         <Typography
           variant="p"
           component={Link}
           to="/login"
-          sx={{ color: "#ffea00", textDecoration: "none" }}
+          sx={{ color: "purple", textDecoration: "none" }}
         >
           Login
         </Typography>
