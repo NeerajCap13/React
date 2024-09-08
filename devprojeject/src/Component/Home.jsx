@@ -13,6 +13,7 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           alignContent: "center",
+          position: "sticky",
         }}
       >
         <Container
