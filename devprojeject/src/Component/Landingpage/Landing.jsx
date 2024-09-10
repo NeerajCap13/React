@@ -6,10 +6,10 @@ const Landing = () => {
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
       <Grid container spacing={2}>
         <Grid item bgcolor={"blue"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          1
+          sdfsd
         </Grid>
         <Grid item bgcolor={"olive"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          2
+          sdfsd
         </Grid>
         <Grid item bgcolor={"Orange"} xs={12} sm={6} md={6} lg={3} xl={6}>
           3
