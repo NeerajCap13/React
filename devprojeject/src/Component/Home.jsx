@@ -2,13 +2,12 @@ import { AppBar, Container, Button, Typography, Box } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
   return (
     <div>
       <AppBar
         sx={{
-          height: "50px",
+          height: "7vh",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
