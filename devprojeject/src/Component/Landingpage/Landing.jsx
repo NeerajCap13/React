@@ -6,11 +6,12 @@ import {
   TextField,
   Button,
   Divider,
+  InputAdornment,
 } from "@mui/material";
 import React from "react";
 import loginImage from "../../Assets/images/login-illustrator.svg"
-// //import EmailIcon from "../../Assets/images/email.svg"
-// import { ReactComponent as PassIcon  } from "../../Assets/images/pass.svg"
+import { ReactComponent as EmailIcon  } from "../../Assets/images/email.svg"
+ import { ReactComponent as PassIcon  } from "../../Assets/images/pass.svg"
 
 
 const Landing = () => {
@@ -59,21 +60,35 @@ const Landing = () => {
                 label="Username"
                 variant="outlined"
                 fullWidth
-                
                 sx={{
                   mt:"20px",
                   mb:"10px",
+                }}
+                InputProps={{
+                  
+                  endAdornment: (
+                    <InputAdornment position="end" >
+                      <EmailIcon/>
+                    </InputAdornment>
+                  )
                   
                 }}
                 
-              >
-                
-              </TextField>
+              />
               <TextField
                 fullWidth
                 id="outlined-basic"
                 label="Password"
                 variant="outlined"
+                InputProps={{
+                  
+                  endAdornment: (
+                    <InputAdornment position="end" >
+                      <PassIcon />
+                    </InputAdornment>
+                  )
+                  
+                }}
                 
               />
               <Box textAlign={"right"}><Typography variant="p" color={"#1E2772"}>Forget Password</Typography></Box>
@@ -87,7 +102,7 @@ const Landing = () => {
               }}>Login Now</Button>
               <br/>
              
-
+              
               <br/><Divider sx={{fontSize:"10px" , fontWeight:"500"}}>OR</Divider><br/>
 
               <Button fullWidth 
