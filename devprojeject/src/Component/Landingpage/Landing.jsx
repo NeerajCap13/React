@@ -1,21 +1,21 @@
-import { Grid, Container,} from "@mui/material";
+import { Grid, Container, Box } from "@mui/material";
 import React from "react";
 
 const Landing = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Grid container spacing={2}>
-        <Grid item bgcolor={"blue"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          sdfsd
+    <Container maxWidth="lg" sx={{ mt: 4, mb: 4  }}>
+      <Grid container spacing={3} sx={{display:"flex", justifyContent:"center" , alignItems:"center"}}>
+        <Grid item>
+          <Box bgcolor={"blue"} height={"100px"} width={"100px"}></Box>
         </Grid>
-        <Grid item bgcolor={"olive"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          sdfsd
+        <Grid item>
+          <Box bgcolor={"Orange"} height={"100px"} width={"100px"}></Box>
         </Grid>
-        <Grid item bgcolor={"Orange"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          3
+        <Grid item>
+          <Box bgcolor={"Red"} height={"100px"} width={"100px"}></Box>
         </Grid>
-        <Grid item bgcolor={"purple"} xs={12} sm={6} md={6} lg={3} xl={6}>
-          4
+        <Grid item>
+          <Box bgcolor={"Coral"} height={"100px"} width={"100px"}></Box>
         </Grid>
       </Grid>
     </Container>
