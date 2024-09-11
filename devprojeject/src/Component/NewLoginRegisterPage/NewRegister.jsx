@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Divider,
+  InputAdornment,
   TextField,
   Typography,
   useMediaQuery,
@@ -9,10 +10,17 @@ import {
 } from "@mui/material";
 import React from "react";
 import loginImage from "../../Assets/images/login-illustrator.svg";
+import { ReactComponent as EmailIcon } from "../../Assets/images/email.svg";
+import { ReactComponent as PassIcon } from "../../Assets/images/pass.svg";
+import {ReactComponent as Mobile} from "../../Assets/images/Mobile.svg";
+import {ReactComponent as Person} from "../../Assets/images/Person.svg";
+
+
+
 
 
 const NewRegister = () => {
-    
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -75,6 +83,13 @@ const NewRegister = () => {
                   mt: "20px",
                   mb: "10px",
                 }}
+                
+                InputProps={{
+                    endAdornment : (
+                        <InputAdornment position="end"><Person/></InputAdornment>
+                    )
+                }}
+
               />
               <TextField
                 id="outlined-basic"
@@ -84,6 +99,11 @@ const NewRegister = () => {
                 fullWidth
                 sx={{
                   mb: "10px",
+                }}
+                InputProps={{
+                    endAdornment : (
+                        <InputAdornment position="end"><EmailIcon/></InputAdornment>
+                    )
                 }}
               />
               <TextField
@@ -95,6 +115,11 @@ const NewRegister = () => {
                 sx={{
                   mb: "10px",
                 }}
+                InputProps={{
+                    endAdornment : (
+                        <InputAdornment position="end"><Mobile/></InputAdornment>
+                    )
+                }}
               />
               <TextField
                 id="outlined-basic"
@@ -104,6 +129,11 @@ const NewRegister = () => {
                 sx={{
                   mb: "10px",
                 }}
+                InputProps={{
+                    endAdornment : (
+                        <InputAdornment position="end"><PassIcon/></InputAdornment>
+                    )
+                }}
               />
               <TextField
                 id="outlined-basic"
@@ -112,6 +142,11 @@ const NewRegister = () => {
                 fullWidth
                 sx={{
                   mb: "20px",
+                }}
+                InputProps={{
+                    endAdornment : (
+                        <InputAdornment position="end"><PassIcon/></InputAdornment>
+                    )
                 }}
               />
               <Button
