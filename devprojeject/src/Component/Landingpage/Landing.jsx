@@ -8,14 +8,33 @@ import {
   Divider,
   InputAdornment,
 } from "@mui/material";
-import React from "react";
+
 import loginImage from "../../Assets/images/login-illustrator.svg";
 import { ReactComponent as EmailIcon } from "../../Assets/images/email.svg";
 import { ReactComponent as PassIcon } from "../../Assets/images/pass.svg";
+import React, { useState }  from "react";
+import { Link } from "react-router-dom";
+
+
 
 const Landing = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const [user,setUser]=useState("");
+  const [password,setPassword]=useState("");
+
+  const userInput = (e) => {
+        setUser(e.target.value);
+        console.log(e.target.value);
+  }
+
+  const passInput = (e) => {
+    setPassword(e.target.value);
+    console.log(e.target.value);
+}
+
+
 
   return (
     <Box
@@ -58,6 +77,8 @@ const Landing = () => {
                 id="outlined-basic"
                 label="Username"
                 variant="outlined"
+                value={user}
+                onChange={userInput}
                 fullWidth
                 sx={{
                   mt: "20px",
@@ -76,6 +97,8 @@ const Landing = () => {
                 id="outlined-basic"
                 label="Password"
                 variant="outlined"
+                value={password}
+              onChange={passInput}
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
@@ -110,11 +133,14 @@ const Landing = () => {
 
               <Button
                 fullWidth
+                LinkComponent={Link}
+                to="/newRegister"
                 sx={{
                   color: "#FD7401",
                   borderRadius: "8px",
-                  border: "2px solid #FD7401 ",
+                  border: "0.5px solid #FD7401 ",
                 }}
+                
               >
                 Signup Now
               </Button>
@@ -132,7 +158,7 @@ const Landing = () => {
           </Box>
         </>
       ) : (
-        <Box sx={{ height: "100%", width: "100vw" }}>
+        <Box sx={{ height: "100%", width: "100vw", display:"flex" ,justifyContent:"center",alignItems:"center" }}>
           <Box
             sx={{
               maxWidth: "390px",
@@ -153,6 +179,8 @@ const Landing = () => {
               id="outlined-basic"
               label="Username"
               variant="outlined"
+              value={user}
+              onChange={userInput}
               fullWidth
               sx={{
                 mt: "20px",
@@ -164,6 +192,8 @@ const Landing = () => {
               id="outlined-basic"
               label="Password"
               variant="outlined"
+              value={password}
+              onChange={passInput}
             />
             <Box textAlign={"right"}>
               <Typography variant="p" color={"#1E2772"}>
@@ -194,7 +224,7 @@ const Landing = () => {
               sx={{
                 color: "#FD7401",
                 borderRadius: "8px",
-                border: "2px solid #FD7401 ",
+                border: "0.5px solid #FD7401 ",
               }}
             >
               Signup Now

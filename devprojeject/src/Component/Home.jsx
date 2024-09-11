@@ -24,7 +24,7 @@ const Home = () => {
           }}
         >
           <Box>
-            <Typography>LOGO</Typography>
+            <Typography component={Link} to={"/"} sx={{textDecoration:"none" , color:"white"}}>LOGO</Typography>
           </Box>
           <Box>
             <Button LinkComponent={Link} to="/login" variant="standard">
