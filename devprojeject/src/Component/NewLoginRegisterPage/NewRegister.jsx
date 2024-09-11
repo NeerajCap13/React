@@ -12,15 +12,10 @@ import React from "react";
 import loginImage from "../../Assets/images/login-illustrator.svg";
 import { ReactComponent as EmailIcon } from "../../Assets/images/email.svg";
 import { ReactComponent as PassIcon } from "../../Assets/images/pass.svg";
-import {ReactComponent as Mobile} from "../../Assets/images/Mobile.svg";
-import {ReactComponent as Person} from "../../Assets/images/Person.svg";
-
-
-
-
+import { ReactComponent as Mobile } from "../../Assets/images/Mobile.svg";
+import { ReactComponent as Person } from "../../Assets/images/Person.svg";
 
 const NewRegister = () => {
-
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -83,13 +78,13 @@ const NewRegister = () => {
                   mt: "20px",
                   mb: "10px",
                 }}
-                
                 InputProps={{
-                    endAdornment : (
-                        <InputAdornment position="end"><Person/></InputAdornment>
-                    )
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <Person />
+                    </InputAdornment>
+                  ),
                 }}
-
               />
               <TextField
                 id="outlined-basic"
@@ -101,9 +96,11 @@ const NewRegister = () => {
                   mb: "10px",
                 }}
                 InputProps={{
-                    endAdornment : (
-                        <InputAdornment position="end"><EmailIcon/></InputAdornment>
-                    )
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <EmailIcon />
+                    </InputAdornment>
+                  ),
                 }}
               />
               <TextField
@@ -116,9 +113,11 @@ const NewRegister = () => {
                   mb: "10px",
                 }}
                 InputProps={{
-                    endAdornment : (
-                        <InputAdornment position="end"><Mobile/></InputAdornment>
-                    )
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <Mobile />
+                    </InputAdornment>
+                  ),
                 }}
               />
               <TextField
@@ -130,9 +129,11 @@ const NewRegister = () => {
                   mb: "10px",
                 }}
                 InputProps={{
-                    endAdornment : (
-                        <InputAdornment position="end"><PassIcon/></InputAdornment>
-                    )
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <PassIcon />
+                    </InputAdornment>
+                  ),
                 }}
               />
               <TextField
@@ -144,9 +145,11 @@ const NewRegister = () => {
                   mb: "20px",
                 }}
                 InputProps={{
-                    endAdornment : (
-                        <InputAdornment position="end"><PassIcon/></InputAdornment>
-                    )
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <PassIcon />
+                    </InputAdornment>
+                  ),
                 }}
               />
               <Button
@@ -158,6 +161,7 @@ const NewRegister = () => {
                   borderRadius: "8px",
                   mb: "5px",
                   "&:hover": { bgcolor: "#FD7401" },
+                  boxShadow :"0px 8px 12px 0px rgba(253, 116, 1, 0.3)",
                 }}
               >
                 Create Account

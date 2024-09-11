@@ -98,7 +98,7 @@ const Landing = () => {
                 label="Password"
                 variant="outlined"
                 value={password}
-              onChange={passInput}
+                onChange={passInput}
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
@@ -121,6 +121,7 @@ const Landing = () => {
                   borderRadius: "8px",
                   mt: "20px",
                   "&:hover": { bgcolor: "#FD7401" },
+                  boxShadow :"0px 8px 12px 0px rgba(253, 116, 1, 0.3)",
                 }}
               >
                 Login Now
@@ -209,6 +210,7 @@ const Landing = () => {
                 borderRadius: "8px",
                 mt: "20px",
                 "&:hover": { bgcolor: "#FD7401" },
+                boxShadow :"0px 8px 12px 0px rgba(253, 116, 1, 0.3)",
               }}
             >
               Login Now
@@ -225,6 +227,7 @@ const Landing = () => {
                 color: "#FD7401",
                 borderRadius: "8px",
                 border: "0.5px solid #FD7401 ",
+                boxShadow: " 0px 8px 12px 0px rgba(253, 116, 1, 0.3)",
               }}
             >
               Signup Now
