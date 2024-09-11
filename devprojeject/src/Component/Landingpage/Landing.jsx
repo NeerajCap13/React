@@ -134,7 +134,7 @@ const Landing = () => {
               <Button
                 fullWidth
                 LinkComponent={Link}
-                to="/newRegister"
+                to="/"
                 sx={{
                   color: "#FD7401",
                   borderRadius: "8px",
